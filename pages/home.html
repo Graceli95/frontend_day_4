@@ -4,48 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-    <style>
-      body {
-        text-align: center;
-      }
-      header {
-        height: 20vh;
-        width: 100vw;
-        background-color: blue;
-      }
-      main {
-        height: 20vh;
-        width: 100vw;
-        background-color: rgb(74, 74, 156);
-      }
-
-      section {
-        height: 20vh;
-        width: 100vw;
-        background-color: rgb(77, 255, 0);
-        border: 1px solid black;
-      }
-
-      article {
-        height: 10vh;
-        width: 100vw;
-        background-color: rgb(255, 0, 93);
-      }
-
-      footer {
-        height: 10vh;
-        width: 100vw;
-        background-color: rgb(255, 123, 0);
-      }
-    </style>
+    <link rel="stylesheet" href="../styles/home.css" />
   </head>
   <body>
-    <header>header</header>
-    <main>main</main>
-    <section>section</section>
-    <section>section</section>
-    <article>article</article>
-    <footer>footer</footer>
+    <div class="grid-container">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="../pages/register.html">Register</a></li>
+            <li><a href="../pages/login.html">login</a></li>
+            <li><a href="../pages/products.html">products</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>Welcome to Auto Depot</main>
+      <section id="classics">Classics</section>
+      <section id="new-era">New Era</section>
+      <div class="models">Models</div>
+
+      <footer>
+        <div class="socials">
+          <p id="footerP">
+            Copyright &copy; 2022-2023 Auto Depot, inc. - All rights reserved.
+          </p>
+
+          <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+          <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+          <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
