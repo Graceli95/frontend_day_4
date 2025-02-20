@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <button id="darkmode" class="fa-solid fa-moon"></button>
+    <button id="lightmode" class="fa-solid fa-sun"></button>
+    <br />
+    <br />
+    <br />
+    <br />
+    <img
+      src="https://th.bing.com/th/id/R.ce8551e93a209b88ee9ac2cf0cdce194?rik=k8zdzbPMhO4xXw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fd%2f1%2f8%2f864058-cool-dogs-wallpapers-1920x1080-desktop.jpg&ehk=gew%2b3wRm63WlMAx5APabyIrGZClXV1H8Vivohbq7v2w%3d&risl=&pid=ImgRaw&r=0"
+      alt=""
+      height="200px"
+      width="200px"
+    />
+
+    <h1>Hello world</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In, enim commodi!
+      Totam ex tempora laboriosam? Praesentium dicta at iusto hic dolores iure
+      saepe nemo, officiis soluta accusamus. Blanditiis, quis similique.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In, enim commodi!
+      Totam ex tempora laboriosam? Praesentium dicta at iusto hic dolores iure
+      saepe nemo, officiis soluta accusamus. Blanditiis, quis similique.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In, enim commodi!
+      Totam ex tempora laboriosam? Praesentium dicta at iusto hic dolores iure
+      saepe nemo, officiis soluta accusamus. Blanditiis, quis similique.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In, enim commodi!
+      Totam ex tempora laboriosam? Praesentium dicta at iusto hic dolores iure
+      saepe nemo, officiis soluta accusamus. Blanditiis, quis similique.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In, enim commodi!
+      Totam ex tempora laboriosam? Praesentium dicta at iusto hic dolores iure
+      saepe nemo, officiis soluta accusamus. Blanditiis, quis similique.
+    </p>
+
+    <ul>
+      <li>Hello world</li>
+      <li>Hello world</li>
+      <li>Hello world</li>
+      <li>Hello world</li>
+      <li>Hello world</li>
+    </ul>
+
+    <script>
+      const para = document.querySelectorAll("p");
+
+      for (let p of para) {
+        p.style.color = "red";
+      }
+
+      const li = document.querySelectorAll("li");
+
+      for (let l of li) {
+        l.style.color = "green";
+      }
+
+      const h1 = document.querySelector("h1");
+      h1.style.color = "blue";
+      
+      const body = document.querySelector("body");
+      const darkmode = document.querySelector("#darkmode");
+      const lightmode = document.querySelector("#lightmode");
+
+      function setDarkMode() {
+        body.style.color = "white";
+        body.style.backgroundColor = "black";
+      }
+
+      function setLightMode() {
+        body.style.color = "black";
+        body.style.backgroundColor = "white";
+      }
+
+      darkmode.addEventListener("click", setDarkMode);
+
+      lightmode.addEventListener("click", setLightMode);
+    </script>
+  </body>
+</html>
